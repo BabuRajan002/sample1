@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Pulling...' + env.BRANCH_NAME
             }
         }
         stage('Test') {
